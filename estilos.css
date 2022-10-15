@@ -1,0 +1,101 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Loved+by+the+King&family=Roboto:wght@300&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: black;
+
+}
+.container{
+    font-size: 32vw;
+    color: red;
+    z-index: -10;
+    animation: 3s ease infinite corazon;
+    text-shadow: 4px 4px 25px rgba(255,0,0,0.6);
+}
+
+.container .contenido{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    font-family: 'Loved by the King', cursive;
+}
+
+.container .contenido h1{
+    font-size: 50px;
+}
+.container .contenido h2{
+    font-size: 50px;
+}
+
+.container .contenido p{
+    font-size: 22px;
+}
+.container .contenido p strong{
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.musica{
+    display: flex;
+    padding-top: 200px;
+}
+
+@media (max-width: 600px){
+    body{
+        margin-left: 70%;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background-color: black;
+    }
+    .container{
+        display: flex;
+        font-size: 50vw;
+        z-index: -10;
+        animation: 3s ease infinite corazon;
+        text-shadow: 4px 4px 25px rgba(255,0,0,0.6);
+    }
+
+    .container .contenido h1{
+        font-size: 25px;
+    }
+    .container .contenido h2{
+        font-size: 25px;
+    }
+    
+    .container .contenido p{
+        font-size: 12px;
+    }
+
+    .container .contenido p strong{
+        font-size: 12px;
+    }
+
+    .musica{
+        vertical-align: bottom;
+        justify-content: center;
+    }
+    .musica audio{
+        display: block;
+        bottom: 10px;
+    }
+}
+
+@keyframes corazon {
+    50%{
+        transform: scale(1.3);
+    }
+}
