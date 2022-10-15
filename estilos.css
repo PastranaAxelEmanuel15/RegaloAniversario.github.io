@@ -9,6 +9,7 @@
 body{
    
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
@@ -50,12 +51,20 @@ body{
 
 .musica{
     display: flex;
-    padding-top: 200px;
+    flex-direction: column;
+    padding: 10px;
+}
+.musica label{
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    
 }
 
 @media (max-width: 600px){
     body{
-        margin-left: 70%;
+        padding: 0 0;
         align-items: center;
         justify-content: center;
         min-height: 100vh;
@@ -67,6 +76,9 @@ body{
         z-index: -10;
         animation: 3s ease infinite corazon;
         text-shadow: 4px 4px 25px rgba(255,0,0,0.6);
+    }
+    .container .contenido{
+        top: 50%;
     }
 
     .container .contenido h1{
@@ -85,12 +97,14 @@ body{
     }
 
     .musica{
-        vertical-align: bottom;
         justify-content: center;
     }
     .musica audio{
         display: block;
-        bottom: 10px;
+    }
+    .musica label{
+        color: #fff;
+        
     }
 }
 
